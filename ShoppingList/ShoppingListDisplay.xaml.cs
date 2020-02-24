@@ -17,10 +17,19 @@ namespace ShoppingList
     /// <summary>
     /// Interaction logic for ShoppingListDisplay.xaml
     /// </summary>
-    public partial class ShoppingListDisplay : 
+    public partial class ShoppingListDisplay : UserControl
+    { 
         public ShoppingListDisplay()
         {
             InitializeComponent();
         }
+    public void OnDeleteItemButtonClicked(object sender, RoutedEventArgs e)
+    {
+            if(DataContext is ShoppingListData data)
+            {
+                if()
+                data.Remove(button.DataContext.ToString());
+            }
+    }
     }
 }
